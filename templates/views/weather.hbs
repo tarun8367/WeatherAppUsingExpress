@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerLinks}}
+    <title>Weather App</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    {{>navbar}}
+
+    <!-- Main Header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main_content">
+                    <form action="" class="temp_form">
+                        <input type="text" id="cityName" placeholder="Enter your city Name" autocomplete="off">
+                        <input type="submit" value="Search" id="submitBtn">
+                    </form>
+                </div>
+                <div class="tempInformation">
+                    <div class="top_layer">
+                        <p id="day">Nil</p>
+                        <p id="today_date">12 APR</p>
+                    </div>
+                    <div class="main_layer">
+                        <p id="city_name">City Name will be shown</p>
+                        <div class="middle_layer data_hide">
+                            <p id="temp"><span id="temp_realVal"> 0</span> <sup>o</sup>C</p>
+                            <p id="temp_status"><i class="fa fa-cloud"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer code -->
+    {{>footer}}
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
